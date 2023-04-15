@@ -6,7 +6,7 @@ import (
     "fmt"
     "log"
 
-    "your-project/domain"
+    "github.com/IamNator/hexagonal-structure/domain"
 )
 
 type vendorRepository struct {

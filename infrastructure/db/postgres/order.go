@@ -4,7 +4,7 @@ import (
     "database/sql"
     "fmt"
 
-    "path/to/domain"
+    "github.com/IamNator/hexagonal-structure/domain"
 )
 
 type OrderRepository struct {

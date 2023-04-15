@@ -4,7 +4,7 @@ import (
     "database/sql"
     "errors"
 
-    "path/to/domain"
+    "github.com/IamNator/hexagonal-structure/domain"
 )
 
 type ProductRepository struct {
