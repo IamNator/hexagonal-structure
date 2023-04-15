@@ -113,11 +113,11 @@ In general, it is advisable to use DDD in Go when developing complex systems wit
 
 Here are some examples of situations where DDD can be useful in Go:
 
-Developing enterprise applications with complex business rules and requirements.
-Building microservices that need to communicate with other services and interact with a database or messaging system.
-Developing systems that require a high degree of modularity, scalability, and maintainability.
-Creating software that is closely aligned with the business needs of the organization.
-Developing software that is used by a large number of users and must be highly available, reliable, and performant.
+i. Developing enterprise applications with complex business rules and requirements.
+ii. Building microservices that need to communicate with other services and interact with a database or messaging system.
+iii. Developing systems that require a high degree of modularity, scalability, and maintainability.
+iv. Creating software that is closely aligned with the business needs of the organization.
+v. Developing software that is used by a large number of users and must be highly available, reliable, and performant.
 However, it is important to note that DDD is not a silver bullet and may not be the best approach for every project. It can be time-consuming and expensive to implement, and may not be necessary for smaller or less complex systems. As with any software development approach, it's important to weigh the benefits and drawbacks and choose the approach that best fits the specific needs of the project.
 ```
 
