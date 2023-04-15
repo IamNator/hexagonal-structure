@@ -132,3 +132,31 @@ Therefore, there are no hard and fast rules on when to use DDD over hexagonal ar
 
 Both approaches can be applied in Golang (and other programming languages) to build well-structured, maintainable, and testable software.
 ```
+3. Give me an example of hexagon structure being used in microservices
+
+Let's say we have an e-commerce application that consists of several microservices, including a product catalog service and a shopping cart service. Each microservice can have its own hexagonal architecture, which allows for a clean separation of concerns between the application logic and the infrastructure.
+
+For example, the product catalog service might have the following directory structure:
+
+```
+product-catalog/
+├── cmd/
+│   └── product-catalog/
+│       └── main.go
+├── domain/
+│   ├── product.go
+│   └── product_repository.go
+├── infrastructure/
+│   └── database/
+│       └── mysql/
+│           └── product_repository.go
+└── usecase/
+    └── product_usecase.go
+```
+In this example, the domain directory contains the domain entities and interfaces that define the core business logic of the product catalog service, while the usecase directory contains the application-specific use cases that implement the business logic using the domain entities and interfaces.
+
+The infrastructure directory contains the implementation details for the service, such as the database implementation in the mysql directory. The cmd directory contains the entry point for the service, which wires up the dependencies and starts the service.
+
+Similarly, the shopping cart service might have its own hexagonal architecture, which would allow for a clean separation of concerns between the application logic and the infrastructure.
+
+Using the hexagonal architecture in a microservices architecture can help to create highly modular and testable services that can be developed and deployed independently of each other. It also allows for a clean separation of concerns between the business logic and the infrastructure, which makes it easier to maintain and scale the application over time.
