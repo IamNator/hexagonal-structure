@@ -101,3 +101,34 @@ Interfaces layer: This layer contains the implementation of the user interfaces 
         ├── order_handler.go
         └── customer_handler.go
 ```
+
+### Question and Answers with Chat GPT
+
+1. When is it advisable to use domain driven design in golang?
+
+```
+Domain-driven design (DDD) is a software development approach that emphasizes the importance of understanding and modeling a business domain to create high-quality software that is closely aligned with the needs of the domain experts and users.
+
+In general, it is advisable to use DDD in Go when developing complex systems with a rich business domain, where there is a clear separation between the domain model and the infrastructure code.
+
+Here are some examples of situations where DDD can be useful in Go:
+
+Developing enterprise applications with complex business rules and requirements.
+Building microservices that need to communicate with other services and interact with a database or messaging system.
+Developing systems that require a high degree of modularity, scalability, and maintainability.
+Creating software that is closely aligned with the business needs of the organization.
+Developing software that is used by a large number of users and must be highly available, reliable, and performant.
+However, it is important to note that DDD is not a silver bullet and may not be the best approach for every project. It can be time-consuming and expensive to implement, and may not be necessary for smaller or less complex systems. As with any software development approach, it's important to weigh the benefits and drawbacks and choose the approach that best fits the specific needs of the project.
+```
+
+2. Are they places where DDD is better than hexagon
+
+```
+Hexagonal architecture and Domain-Driven Design (DDD) are not mutually exclusive concepts, as they both focus on structuring software around the domain model.
+
+In fact, some developers see hexagonal architecture as a concrete implementation of DDD principles. Hexagonal architecture provides a way to structure an application so that it is easy to replace or update dependencies, while DDD provides a way to model the domain and encapsulate business logic.
+
+Therefore, there are no hard and fast rules on when to use DDD over hexagonal architecture. Instead, it depends on the requirements of the application and the preferences of the development team.
+
+Both approaches can be applied in Golang (and other programming languages) to build well-structured, maintainable, and testable software.
+```
