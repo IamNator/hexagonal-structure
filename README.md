@@ -19,8 +19,7 @@ Interfaces layer: This layer contains the implementation of the user interfaces 
 #### First Approach
 ```
 ├── cmd
-│   ├── main.go
-│   └── vendor
+│   └── main.go
 ├── domain
 │   ├── customer.go
 │   ├── order.go
@@ -62,6 +61,8 @@ Interfaces layer: This layer contains the implementation of the user interfaces 
 #### Second approach
 
 ```
+├── cmd
+│   └── main.go
 ├── application
 │   ├── handler
 │   │   ├── product_handler.go
